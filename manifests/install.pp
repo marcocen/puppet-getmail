@@ -27,7 +27,7 @@ class getmail::install {
   }
 
   exec { 'Install getmail':
-    command     => 'python setup.py install',
+    command     => 'python2 setup.py install',
     cwd         => '/tmp/getmail-5.14',
     path        => '/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/bin',
     refreshonly => true,
